@@ -9,6 +9,8 @@
     <p>Count: {{ todoCount }} / {{ meta.totalCount }}</p>
     <p>Active: {{ active ? 'yes' : 'no' }}</p>
     <p>Clicks on todos: {{ clickCount }}</p>
+    <q-btn @click="$authService.login()">Login</q-btn>
+    <q-btn @click="$authService.logout()">Logout</q-btn>
   </div>
 </template>
 
