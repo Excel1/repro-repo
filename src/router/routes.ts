@@ -17,7 +17,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/secure',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/SecurePage.vue') }],
+    children: [{ path: '', name: 'account_security', component: () => import('pages/SecurePage.vue') }],
     meta: { authGuard: true },
     // meta: { authGuard: { fallbackUrl: 'unauthorized' } },
     // meta: { authGuard: { validator: () => false } },
